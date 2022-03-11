@@ -13,7 +13,7 @@ int main(void)
 	i = 97;
 
 	do
-       	{
+	{
 	if (i == 101 || i == 113)
 	{
 	continue;
@@ -22,7 +22,10 @@ int main(void)
 	else
 	{
 	putchar(i);
-	i++; }
+	}
+	
+	i++;
+
 	} while (i < 122);
 	return (0);
 }
