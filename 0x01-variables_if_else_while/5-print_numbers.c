@@ -10,16 +10,11 @@ int main(void)
 {
 	int i;
 
-	i = 0;
-
-	while (i < 10)
+	for(i = 48; i < 58; i++;)
 	{
-		printf(i);
+		putchar(i);
 
-		i++;
 	}
-
-	printf("\n")
 
 	return (0);
 

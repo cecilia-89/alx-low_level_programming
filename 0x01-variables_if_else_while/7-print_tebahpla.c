@@ -1,8 +1,7 @@
 /**
- *
  *main -Entry point
  *
- *Return : Always 0 (Success)
+ *Return: Always 0 (Success)
  *
  */
 
@@ -15,9 +14,11 @@ int main (void)
 	while (i > 97)
 	{
 		putchar(i);
+
 		i--;
 
 	}
+
 	putchar('\n');
 
 }
