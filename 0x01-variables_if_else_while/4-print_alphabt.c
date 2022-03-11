@@ -19,7 +19,7 @@ int main(void)
 	else
 	{
 	putchar(i);
-	i++ }
+	i++; }
 	}
 	return (0);
 }

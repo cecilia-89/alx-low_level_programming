@@ -15,7 +15,7 @@ int main(void)
 	while (i <= 90)
 	{
 	putchar(i)
-	i++ }
+	i++; }
 
 	int x = 97;
 
