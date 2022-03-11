@@ -5,20 +5,18 @@
  *
  */
 
-int main (void)
+int main(void)
 {
 	int i;
 
-	i = 122;
-
-	while (i > 97)
+	for (i = 122; i > 97; i--)
 	{
 		putchar(i);
-
-		i--;
 
 	}
 
 	putchar('\n');
+
+	return (0)
 
 }
