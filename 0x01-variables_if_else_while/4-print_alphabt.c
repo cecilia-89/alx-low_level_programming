@@ -15,7 +15,7 @@ int main(void)
 	while (i <= 90)
 	{
 	if (i == 101 || i == 113)
-	continue
+	continue;
 	else
 	{
 	putchar(i);
