@@ -21,10 +21,10 @@ int main(void)
 
 	}
 
-	while (x < 102)
+	while (x <= 102)
 	{
 	putchar(x);
-	
+
 	x++;
 	}
 
