@@ -12,20 +12,14 @@ int main(void)
 
 	i = 97;
 
-	do
+	while (i < 122)
 	{
-	if (i == 101 || i == 113)
-	{
-	continue;
-	}
+		if (i != 101 && i != 113)
+		{
+			putchar(i);
 
-	else
-	{
-	putchar(i);
-	}
-	
+		}
+
 	i++;
-
-	} while (i < 122);
 	return (0);
 }
