@@ -9,19 +9,22 @@
 int main(void)
 {
 	int i;
+	int x;
        
-	i= 65;
+	i= 97;
 
-	while (i <= 90)
-	{
-	putchar(i)
-	i++; }
-
-	int x = 97;
-
-	while (x <= 122)
+	while (i <= 122)
 	{
 	putchar(i);
+	i++; }
+
+	x = 65;
+
+	while (x <= 90)
+	{
+	putchar(i);
+
+	putchar("\n")
 
 	return (0);
 }
