@@ -1,0 +1,18 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
+ *
+ */
+
+int main(void)
+{
+	int i = 65;
+
+	while (i <= 90)
+	{
+	putchar("%c\n", i)
+	i++ }
+	return (0);
+}
