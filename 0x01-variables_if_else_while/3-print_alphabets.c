@@ -22,8 +22,8 @@ int main(void)
 
 	while (x <= 90)
 	{
-	putchar(i);
-	}
+	putchar(x);
+	x++; }
 
 	putchar('\n');
 
