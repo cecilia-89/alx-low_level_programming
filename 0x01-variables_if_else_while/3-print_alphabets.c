@@ -21,7 +21,7 @@ int main(void)
 
 	while (x <= 122)
 	{
-	putchar(i)
+	putchar(i);
 
 	return (0);
 }

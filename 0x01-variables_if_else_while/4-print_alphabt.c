@@ -18,7 +18,7 @@ int main(void)
 	continue
 	else
 	{
-	putchar(i)
+	putchar(i);
 	i++ }
 	}
 	return (0);
