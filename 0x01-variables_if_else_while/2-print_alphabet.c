@@ -8,11 +8,13 @@
 
 int main(void)
 {
-	int i = 65;
+	int i;
+       
+	i = 65;
 
 	while (i <= 90)
 	{
-	putchar("%c\n", i)
+	putchar(i)
 	i++ }
 	return (0);
 }

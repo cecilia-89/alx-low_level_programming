@@ -8,7 +8,9 @@
 
 int main(void)
 {
-	int i = 65;
+	int i;
+       
+	i= 65;
 
 	while (i <= 90)
 	{
@@ -16,7 +18,7 @@ int main(void)
 	continue
 	else
 	{
-	putchar("%c\n", i)
+	putchar(i)
 	i++ }
 	}
 	return (0);
