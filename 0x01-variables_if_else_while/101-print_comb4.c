@@ -19,7 +19,7 @@ int main(void)
 
 	while (x < 56)
 	{
-		y = 49;
+		y = x + 1;
 
 		while (y < 57)
 		{
@@ -37,13 +37,10 @@ int main(void)
 					putchar(' ');
 
 				}
-
 				z++;
 			}
-
 			y++;
 		}
-
 		x++;
 	}
 
