@@ -37,8 +37,14 @@ int main(void)
 					putchar(' ');
 
 				}
+
+				z++;
 			}
+
+			y++;
 		}
+
+		x++;
 	}
 
 	putchar('\n');
