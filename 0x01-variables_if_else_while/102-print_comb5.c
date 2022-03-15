@@ -19,7 +19,7 @@ for (w = 48; w < 58; w++)
 		{
 			for (z = 48; z < 58; z++)
 			{
-				if (w + x < y + z)
+				if (w + x <= y + z)
 				{
 					putchar(w);
 					putchar(x);
