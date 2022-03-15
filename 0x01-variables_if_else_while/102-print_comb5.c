@@ -15,35 +15,54 @@ int main(void)
 
 	while (x < 58)
 	{
-		y = x;
-
-		putchar(x);
+		y = 48;
 
 		while (y < 58)
 		{
-			putchar(y);
-			putchar(' ');
-
-			z = y;
+			z = 48;
 
 			while (z < 58)
 			{
-				putchar(z);
-
-				i = z + 1;
+				i = 48;
 
 				while (i < 58)
-				{
-					putchar(i);
-					putchar(',');
-					putchar(' ');
+				{      
+					if ( x + y < z + i)
+					{
+						putchar(x);
+						putchar(y);
+						putchar(' ');
+						putchar(z);
+						putchar(i);
+
+						if (x + y + z + i != 227)
+						{
+							putchar(',');
+							putchar(' ');
+
+						}
+
+						else
+						{
+							break;
+						}
+
+					}
+					
+
 					i++;
 				}
+
 				z++;
-		y++;	}
-	x++;	}
+		
+			}
+
+			y++;
+
+		}
+		
+		x++;
 	}
 
-	putchar('\n');
 	return (0);
 }
