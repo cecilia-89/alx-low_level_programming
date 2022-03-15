@@ -9,36 +9,46 @@
 
 int main(void)
 {
-	int x;
-	int y;
+	int w, x, y, z;
 
-	x = 48;
+	w = 48;
 
-	while (x < 57)
+	while (w < 58)
 	{
-		y = x + 1;
+		x = 48;
 
-		while (y < 58)
+		while (x < 58)
 		{
-			putchar(x);
-			putchar(y);
+			y = 48;
 
-			if (y != 57 || x != 56)
+			while (y < 58)
 			{
-				putchar(',');
-				putchar(' ');
+				z = 48;
 
+				while (z < 58)
+				{
+
+					putchar(w);
+					putchar(x);
+					putchar(' ');
+					putchar(y);
+					putchar(z);
+					putchar(',');
+					putchar(' ');
+
+					z++;
+				}
+
+				y++;
 			}
 
-			y++;
-
+			x++;
 		}
 
-		x++;
+		w++;
 
 	}
 
-	putchar('\n');
 
 return (0);
 
