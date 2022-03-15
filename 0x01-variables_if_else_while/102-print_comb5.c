@@ -9,60 +9,41 @@
 
 int main(void)
 {
-	int x, y, z, i;
+int w, x, y, z;
 
-	x = 48;
-
-	while (x < 58)
+for (w = 48; w < 58; w++)
+{
+	for (x = 48; x < 58; x++)
 	{
-		y = 48;
-
-		while (y < 58)
+		for (y = 48; y < 58; y++)
 		{
-			z = 48;
-
-			while (z < 58)
+			for (z = 48; z < 58; z++)
 			{
-				i = 48;
+				if (w + x < y + z)
+				{
+					putchar(w);
+					putchar(x);
+					putchar(' ');
+					putchar(y);
+					putchar(z);
 
-				while (i < 58)
-				{      
-					if ( x + y < z + i)
+					if (x + w + y + z != 227)
 					{
-						putchar(x);
-						putchar(y);
+						putchar(',');
 						putchar(' ');
-						putchar(z);
-						putchar(i);
-
-						if (x + y + z + i != 227)
-						{
-							putchar(',');
-							putchar(' ');
-
-						}
-
-						else
-						{
-							break;
-						}
-
 					}
-					
 
-					i++;
+					else
+					{
+						break;
+					}
 				}
 
-				z++;
-		
+
 			}
-
-			y++;
-
 		}
-		
-		x++;
 	}
+}
 
 	return (0);
 }
