@@ -21,12 +21,12 @@ for (w = 48; w < 58; w++)
 			{
 
 				if (w + x < y + z || w + x + y + z == 194)
-				{  
+				{
 					putchar(w);
 					putchar(x);
 					putchar(' ');
 					putchar(y);
- 					putchar(z);
+					putchar(z);
 
 
 					if (x + w + y + z != 227)
