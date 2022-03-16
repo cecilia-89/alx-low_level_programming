@@ -26,16 +26,3 @@ void print_alphabets(void)
 
 }
 
-/**
- * main - Entry point
- *
- * Return: 0
- *
- */
-
-int main(void)
-{
-	print_alphabets();
-
-	return (0);
-}

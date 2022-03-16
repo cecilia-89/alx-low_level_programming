@@ -9,9 +9,8 @@
 
 int isAlpha(int c)
 {
-	int isalpha(void);
 
-	if (isaplha(c))
+	if ( _isaplha(c))
 	{
 		return (1);
 	}
