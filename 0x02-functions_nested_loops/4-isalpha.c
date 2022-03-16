@@ -12,6 +12,7 @@
 
 int _isalpha(int c)
 {
+	int isalpha(int c);
 
 	if (isaplha(c))
 	{
