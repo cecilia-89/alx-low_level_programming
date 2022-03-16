@@ -10,3 +10,5 @@
  int print_sign(int n);
 
  char _putchar(char c);
+
+ int isalpha(int arg);

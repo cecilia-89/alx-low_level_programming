@@ -6,6 +6,8 @@
  *
  * Return: 0 if lowercase otherwise 1
  *
+ * @c: an argument
+ *
  */
 
 int _islower(int c)

@@ -12,20 +12,20 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		printf('+');
+		puts('+');
 
 		return (1);
 	}
 
 	else if (n < 0)
 	{
-		printf('0');
+		puts('0');
 		return (0);
 	}
 
 	else
 	{
-		printf('-');
+		puts('-');
 		return (-1);
 
 	}
