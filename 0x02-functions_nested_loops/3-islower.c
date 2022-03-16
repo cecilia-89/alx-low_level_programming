@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 /**
- * main -check the code
- *
  * isLower - checks for lowercase alphabet
  *
- * int c: alphabet to be checked
+ * 'c' - interger
  *
  * Return: 0 if lowercase otherwise 1
  *
@@ -13,7 +11,7 @@
 
 int isLower(int c)
 {
-	int islower();
+	int islower(int);
 
 	if (islower(c))
 	{

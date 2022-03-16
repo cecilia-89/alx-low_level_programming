@@ -2,8 +2,6 @@
  * print_sign - returns 0, 1, -1
  *
  * Return: either three above
- * 
- * n: the variable
  *
  */
 
@@ -16,7 +14,7 @@ int print_sign(int n)
 		return (1);
 	}
 
-	if else (n < 0) 
+	if else(n < 0)
 	{
 		printf('0');
 		return (0);
@@ -25,7 +23,7 @@ int print_sign(int n)
 	else
 	{
 		printf('-');
-		return(-1);
+		return (-1);
 
 	}
 

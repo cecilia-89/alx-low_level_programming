@@ -1,7 +1,7 @@
 /**
  * isAlpha - returns 0 or 1
  *
- * c - true or false
+ * C - true or false
  *
  * Return: Success
  *
