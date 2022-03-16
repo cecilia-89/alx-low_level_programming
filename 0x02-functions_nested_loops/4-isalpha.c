@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include "main.h"
+
 /**
  * _isalpha - returns 0 or 1
  *
