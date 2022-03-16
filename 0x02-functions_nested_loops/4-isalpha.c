@@ -1,5 +1,5 @@
 /**
- * isAlpha - returns 0 or 1
+ * _isalpha - returns 0 or 1
  *
  * C - true or false
  *
@@ -7,10 +7,10 @@
  *
  */
 
-int isAlpha(int c)
+int _isalpha(int c)
 {
 
-	if ( _isaplha(c))
+	if ( isaplha(c))
 	{
 		return (1);
 	}
