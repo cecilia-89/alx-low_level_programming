@@ -3,7 +3,11 @@
 /**
  * add - adds two numbers
  *
- * Returns: the sum
+ * @x - interger
+ *
+ * @y - interger
+ *
+ * Return: the sum
  *
  */
 

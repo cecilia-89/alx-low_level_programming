@@ -19,12 +19,12 @@ void jack_bauer(void)
 			{
 				for (z = 0; z <=9; z++)
 				{
-					putchar(w);
-					putchar(y);
-					putchar(':');
-					putchar(x);
-					putchar(z);
-					putchar('\n');
+					puts(w);
+					puts(y);
+					puts(':');
+					puts(x);
+					puts(z);
+					puts('\n');
 				}
 			}
 		}
