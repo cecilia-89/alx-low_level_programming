@@ -16,7 +16,7 @@ int print_sign(int n)
 		return (1);
 	}
 
-	if else(n < 0)
+	else if (n < 0)
 	{
 		printf('0');
 		return (0);
