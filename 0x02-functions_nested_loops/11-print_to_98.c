@@ -25,7 +25,7 @@ void print_to_98(int n)
 	{
 		for (c = n; c < 99; c--)
 		{
-			printf("%d, ", c)
+			printf("%d, ", c);
 
 		}
 	}
