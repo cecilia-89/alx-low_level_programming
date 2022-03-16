@@ -12,3 +12,5 @@
  char _putchar(char c);
 
  int isalpha(int arg);
+
+ int _abs(int);
