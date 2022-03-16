@@ -3,7 +3,7 @@
 /**
  * print_last_digit - pints last digit
  *
- * @n - interger
+ * @n: interger
  *
  * Return: last digit
  *
