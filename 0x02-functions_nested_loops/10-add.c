@@ -3,9 +3,9 @@
 /**
  * add - adds two numbers
  *
- * @x - interger
+ * @x: interger
  *
- * @y - interger
+ * @y: interger
  *
  * Return: the sum
  *
