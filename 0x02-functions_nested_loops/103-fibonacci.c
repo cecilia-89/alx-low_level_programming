@@ -30,6 +30,8 @@ int main(void)
 			k = next;
 		}
 
+	}
+
 		printf("%lu\n", sum);
 
 
