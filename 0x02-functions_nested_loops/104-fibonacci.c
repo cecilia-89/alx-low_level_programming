@@ -42,11 +42,12 @@ int main(void)
 			printf("%lu", k2 % 1000000000);
 
 			k1 = k1 + j1;
-			
+
 			j1 = k1 - j1;
-																								k2 = k2 + j2;
-																								j2 = k2 - j2;																			}
-		
-		printf("\n");	
+
+			k2 = k2 + j2;
+
+			j2 = k2 - j2;																			}
+		printf("\n");
 		return (0);
 }
