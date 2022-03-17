@@ -26,3 +26,5 @@
  int print_last_digit(int);
 
  void print_times_table(int n);
+
+ void print_times_table(int n);
