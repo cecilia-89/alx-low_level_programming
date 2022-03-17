@@ -17,11 +17,19 @@ void print_to_98(int n)
 
 		for (c = n; c < 99; c++)
 		{
-			printf("%d, ", c);
+			if (c != 98)
+			{
+				
+				printf("%d, ", c);
+			}
+			else
+			{
+				printf("%d", c);
+			}
 		}
 	}
 	
-	if (n > 98)
+	else
 	{
 		for (c = n; c < 99; c--)
 		{

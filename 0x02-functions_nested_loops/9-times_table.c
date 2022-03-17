@@ -16,9 +16,22 @@ void times_table(void)
 	{
 		for (m = 48; m < 58; m++)
 		{
-			_putchar(n * m);
-			_putchar(',');
-			_putchar(' ');
+			int product = n * m;
+
+			if (product > 10)
+			{
+				_putchar(product);
+				_putchar(',');
+				_putchar(' ');
+			}
+			
+			else
+			{
+				_putchar(product);
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+			}
 
 		}
 
