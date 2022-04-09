@@ -15,6 +15,6 @@ int _strlen(char *s)
 
 	length = byte_length - 1;
 
-	return length
+	return length;
 
 }
