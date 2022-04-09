@@ -4,7 +4,7 @@
 /**
  * reset_to_98 - resets to 98 literally
  *
- * @n - interger
+ * @n: interger
  */
 
 void reset_to_98(int *n)
