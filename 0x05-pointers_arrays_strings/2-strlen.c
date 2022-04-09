@@ -9,6 +9,8 @@
 
 int _strlen(char *s)
 {
+	int byte_length, length;
+
 	byte_length = sizeof(s);
 
 	length = byte_length - 1;
