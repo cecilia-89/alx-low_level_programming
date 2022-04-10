@@ -11,7 +11,7 @@ int _strlen(char *s)
 {
 	int byte_length;
 
-	byte_length = sizeof(s);
+	byte_length = sizeof(*s);
 
 	return (byte_length);
 
