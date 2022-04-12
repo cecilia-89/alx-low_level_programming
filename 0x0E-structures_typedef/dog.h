@@ -6,4 +6,4 @@ typedef struct dog
 
 	char *owner;
 
-};
+} dog;
