@@ -7,7 +7,7 @@
  *
  */
 
-int main()
+int main(void)
 {
 	printf("%s", __FILE__);
 
