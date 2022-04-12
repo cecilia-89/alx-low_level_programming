@@ -1,19 +1,22 @@
+#include <stdio.h>
+#include "dog.h"
 /**
- * void init_dog - initializes a structure
+ * init_dog - initializes a structure
  *
  * @d: base address
  * @name: character
  * @age: float
  * @owner: character
+ *
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	dog.name = *name;
-	
-	dog.age = age;
+	(*d).age = age;
 
-	dog.owner = *owner;	
+	d->name = name;
+
+	d->owner = owner;
+
 
 }
-
