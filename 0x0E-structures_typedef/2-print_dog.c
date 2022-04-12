@@ -2,7 +2,7 @@
 #include "dog.h"
 
 /**
- * print_dog - prints a dog 
+ * print_dog - prints a dog
  *
  * @d: base address
  *
@@ -10,21 +10,39 @@
 
 void print_dog(struct dog *d)
 {
-	if (d = NULL)
+	if (d == 0)
 	{
 		return;
 	}
 
-	if (d -> name == NULL)
+	if (d->name == 0)
 	{
-		printf("Name: (nil)");
+		printf("Name: (nil)\n");
 
 	}
-
 	else
 	{
-		printf("Name: %s", d -> name);
+		printf("Name: %s\n", d->name);
 	}
+
+	if (d->owner == 0)
+	{
+		printf("Owner: (nil)\n");
+	}
+	else
+	{
+		printf("Owner: %s\n", d->owner);
+	}
+
+	if (d->age == 0)
+	{
+		printf("Age: (nil)\n");
+	}
+	else
+	{
+		printf("Age: %f\n", d->age);
+	}
+
 
 
 }
