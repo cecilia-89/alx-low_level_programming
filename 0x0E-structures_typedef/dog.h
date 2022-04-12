@@ -20,4 +20,4 @@ typedef struct dog
 } dog;
 
 
-#endif 
+#endif /* dog */
