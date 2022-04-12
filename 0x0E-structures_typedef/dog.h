@@ -1,3 +1,6 @@
+#ifndef DOG
+#define DOG
+
 typedef struct dog
 {
 	char *name;
@@ -7,3 +10,6 @@ typedef struct dog
 	char *owner;
 
 } dog;
+
+
+#endif
