@@ -1,5 +1,5 @@
 #include <stddef.h>
-
+#include <stdio.h>
 /**
  * array_iterator - prints a name
  *
@@ -20,5 +20,3 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	}
 
 }
-
-
