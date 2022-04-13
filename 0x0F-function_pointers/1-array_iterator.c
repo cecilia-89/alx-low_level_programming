@@ -1,5 +1,4 @@
 #include <stddef.h>
-#include <stdio.h>
 /**
  * array_iterator - prints a name
  *
