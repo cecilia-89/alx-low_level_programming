@@ -1,3 +1,5 @@
+#include "function_pointers.h"
+
 /**
  * int_index - returns index if element matches
  *
