@@ -18,29 +18,34 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
+	int i;
+
 	va_list ptr;
 
 	va_start(ptr, n);
 
-	for (int i = 0; i < n; i++)
+	for (i = 0; i < n; i++)
 		
 	{
-		int string;
+		char *string;
 
-		string = va_arg(ptr, int);
+		string = va_arg(ptr, char *);
 
-		if (separator && string == '0')
+		if (*separator != '0' && *string == '0')
 			printf("Nil%s", separator);
 
-		else if (separator && string != '0')
+
+		else if (*separator != '0' && *string != '0')
 		{
-			printf("%s%s", *string, separator);
+			printf("%s%s", string, separator);
 		}
 
-		else if (!separator && string != '0')
+
+		else if (i == n - 1 || *separator == '0' && *string != '0')
 		{
-			printf("%s", *string);
+			printf("%s", string);
 		}
+
 
 		else
 		{
@@ -54,4 +59,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	printf("\n");
 
+}
+
+int main(void)
+{
+	    print_strings(", ", 2, "Jay", "0");
+	        return (0);
 }
