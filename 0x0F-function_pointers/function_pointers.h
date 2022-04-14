@@ -1,10 +1,11 @@
-#ifndef FUNC_POINTERS
-#define FUNC_POINTERS
+#ifndef _VARIADIC_FUNCTIONS_
+#define _VARIADIC_FUNCTIONS_
 
-#include <stddef.h>
+#include <stdarg.h>
+#include <stdio.h>
 
 void print_name(char *name, void (*f)(char *));
 void array_iterator(int *array, size_t size, void (*action)(int));
 int int_index(int *array, int size, int (*cmp)(int));
 
-#endif /* function pointers */
+#endif
