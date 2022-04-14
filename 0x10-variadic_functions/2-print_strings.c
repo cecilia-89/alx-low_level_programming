@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdarg.h>
 #include "variadic_functions.h"
 
 /**
@@ -22,30 +20,26 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_list ptr;
 
+	char *string;
+
 	va_start(ptr, n);
 
 	for (i = 0; i < n; i++)
-		
 	{
-		char *string;
-
 		string = va_arg(ptr, char *);
 
 		if (*separator != '0' && *string == '0')
 			printf("Nil%s", separator);
-
-
-		else if (*separator != '0' && *string != '0')
-		{
-			printf("%s%s", string, separator);
-		}
-
 
 		else if (i == n - 1 || *separator == '0' && *string != '0')
 		{
 			printf("%s", string);
 		}
 
+		else if (*separator != '0' && *string != '0')
+		{
+			printf("%s%s", string, separator);
+		}
 
 		else
 		{
@@ -59,10 +53,4 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	printf("\n");
 
-}
-
-int main(void)
-{
-	    print_strings(", ", 2, "Jay", "0");
-	        return (0);
 }
