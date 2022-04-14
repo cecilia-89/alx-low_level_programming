@@ -18,7 +18,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	int i;
 
-	if (size != NULL && array != NULL && cmp != NULL)
+	if (cmp != NULL && size != NULL && array != NULL)
 	{
 
 		for (i = 0; i < size; i++)
