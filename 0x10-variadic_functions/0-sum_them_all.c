@@ -1,5 +1,5 @@
 #include <stdarg.h>
-
+#include <stdio.h>
 /**
  * sum_them_all - sums elements
  *
@@ -39,4 +39,15 @@ int sum_them_all(const unsigned int n, ...)
 
 	return (sum);
 
+}
+
+int main(void)
+{
+	    int sum;
+
+	        sum = sum_them_all(2, 98, 1024);
+		    printf("%d\n", sum);
+		        sum = sum_them_all(4, 98, 1024, 402, -1024);
+			    printf("%d\n", sum);    
+			        return (0);
 }
