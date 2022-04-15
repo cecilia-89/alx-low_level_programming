@@ -16,11 +16,12 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	unsigned int i;
-
 	va_list ptr;
 
+	unsigned int i;
+
 	char *string;
+
 
 	va_start(ptr, n);
 
