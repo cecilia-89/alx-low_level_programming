@@ -29,16 +29,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		string = va_arg(ptr, char *);
 
-		if (string)
+		if (!string)
 
+			printf("nil");
+
+		else 
 			printf("%s", string);
 
 			if (i != n - 1)
-   
 				printf("%s", separator);
-
-		else if (!string)
-			printf("nil");
 
 
 	}
@@ -47,10 +46,4 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_end(ptr);
 
-}
-
-int main(void)
-{
-	    print_strings(", ", 2, "Jay", "Django");
-	        return (0);
 }
