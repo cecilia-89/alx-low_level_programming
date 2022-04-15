@@ -32,10 +32,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("nil");
 
 		else
-			pirintf("%s", str);
+			printf("%s", str);
 
 			if (i != n - 1)
-				printf("%s", trings.ceparator);
+				printf("%s", separator);
 
 
 	}
