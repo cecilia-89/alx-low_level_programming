@@ -29,23 +29,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		string = va_arg(ptr, char *);
 
-		if (*separator != '0' && *string == '0')
-			printf("Nil%s", separator);
-
-		else if (i == n - 1 || *separator == '0' && *string != '0')
-		{
-			printf("%s", string);
-		}
-
-		else if (*separator != '0' && *string != '0')
-		{
-			printf("%s%s", string, separator);
-		}
-
-		else
-		{
-			printf("nil");
-		}
+		
 
 
 	}
