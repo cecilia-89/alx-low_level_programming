@@ -30,15 +30,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		string = va_arg(ptr, char *);
 
 		if (string)
-		{
+
+			printf("%s", string);
+
 			if (i != n - 1)
-				printf("%s%s", string, separator);
-			else
-				printf("%s", string);
-		}
-		
-		else
-			printf("nil%s", separator);
+   
+				printf("%s", separator);
+
+		else if (!string)
+			printf("nil");
 
 
 	}
