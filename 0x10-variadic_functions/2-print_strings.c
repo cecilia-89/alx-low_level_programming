@@ -36,8 +36,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			else
 				printf("%s", string);
 		}
-
-		printf("nil%s", separator);
+		
+		else
+			printf("nil%s", separator);
 
 
 	}
@@ -46,4 +47,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_end(ptr);
 
+}
+
+int main(void)
+{
+	    print_strings(", ", 2, "Jay", "Django");
+	        return (0);
 }
