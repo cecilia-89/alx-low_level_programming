@@ -1,9 +1,9 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * print_list - prints length of string and string
  * 
- * @h: single linked list 
+ * @h: single linked list
  * 
  * Return: count of linked lists
  * 

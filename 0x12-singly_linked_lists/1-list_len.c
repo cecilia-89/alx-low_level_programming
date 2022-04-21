@@ -1,9 +1,9 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * list_len - calculates the num of nodes
  * 
- * @h: single linked list 
+ * @h: single linked list
  * 
  * Return: count of linked lists
  * 
