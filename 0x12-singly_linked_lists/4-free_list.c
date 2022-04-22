@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_list - frees 
+ * free_list - frees
  *
  * @head: pinter to list_t
  *
