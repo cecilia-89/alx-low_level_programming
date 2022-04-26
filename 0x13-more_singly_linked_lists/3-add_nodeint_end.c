@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint - prints elements in a list
+ * add_nodeint_end - adds node at the end
  *
  * @n: interger
  *
