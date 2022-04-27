@@ -14,34 +14,30 @@
 #include "lists.h"
 
 /**
- *  * listint_len - prints elements in a list
- *   *
- *    * @h: pointer
- *     *
- *      * Return: no. of nodes
- *       *
- *        */
+ * listint_len - prints elements in a list
+ *
+ * @h: pointer
+ *
+ * Return: no. of nodes
+ *
+ */
 
 
 size_t listint_len(const listint_t *h)
 {
-	        const listint_t *temp = h;
+	const listint_t *temp = h;
 
-		        size_t i = 0;
+	size_t i = 0;
 
-			        if (h == 0)
+	while (temp != 0)
+	{	
+		temp = temp->next;
 
-					                return (0);
+		i++;
 
-				        while (temp != 0)
-						        {
-								                temp = temp->next;
+	}
 
-										                i++;
-
-												        }
-
-					        return (i);
+	return (i);
 
 }
 
@@ -67,31 +63,35 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	if (index == 0)
 	{
 		*head = (*head)->next;
+
+		return (1);
 	}
 
-	else
+
+
+	while (i < index)
 	{
+		temp = temp->next;
 
+		i++;
 
-		while (i < index)
-		{
-			temp = temp->next;
-
-			i++;
-
-		}
+	}
 
 		
 
-		if (temp->next->next == 0)
+	if (temp->next->next == 0)
+	{
 	
-			temp->next = 0;
+		temp->next = 0;
 		
 		temp->next = temp->next->next;
-		
+
 	}
 
-	return (1);
+	return (0);
+		
+	
+
 
 }
 
