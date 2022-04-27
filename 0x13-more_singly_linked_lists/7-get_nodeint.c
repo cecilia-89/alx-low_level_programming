@@ -57,7 +57,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 	size_t len;
 
-	len = listint_len((const listint_t*)head);
+	len = listint_len((const listint_t *)head);
 
 	temp = head;
 
