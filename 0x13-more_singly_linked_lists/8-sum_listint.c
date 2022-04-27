@@ -3,6 +3,8 @@
 /**
  * sum_listint - sums all elements in a list
  *
+ * @head: pointer
+ *
  * Return: the sum of elements
  *
  */

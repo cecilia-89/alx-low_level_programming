@@ -1,9 +1,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint - prints elements in a list
- *
- * @n: interger
+ * pop_listint - prints elements in a listr
  *
  * @head: pointer
  *
@@ -22,7 +20,7 @@ int pop_listint(listint_t **head)
 	{
 		printf("(nil)");
 
-		return(0);
+		return (0);
 	}
 
 	temp = *head;
@@ -35,8 +33,6 @@ int pop_listint(listint_t **head)
 
 	return (element);
 
-	
+
 
 }
-
-

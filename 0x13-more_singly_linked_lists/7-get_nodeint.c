@@ -31,11 +31,6 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	}
 
 
-	if (!temp->n)
-	{
-		return (0);
-	}
-
 	return(temp);
 
 	
