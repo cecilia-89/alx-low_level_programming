@@ -1,1 +1,3 @@
-Working with singly linked list in C
+#Linked Lists
+
+working with linked lists in C
