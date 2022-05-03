@@ -12,6 +12,8 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	int i;
 
+	int byt;
+
 	if (!filename)
 		return(-1);
 
@@ -26,7 +28,12 @@ int append_text_to_file(const char *filename, char *text_content)
 			;
 
 		write(ptr, text_content, i);
+
+		if (byt == -1)
+			return (-1);
 	}
+
+	close(ptr);
 
 	return (0);
 
