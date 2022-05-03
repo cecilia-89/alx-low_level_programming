@@ -5,7 +5,7 @@
  * @filename: name of file
  * @text_content: content to be written
  * Return: on success 0
- * 
+ *
  */
 
 int append_text_to_file(const char *filename, char *text_content)
@@ -37,7 +37,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	close(ptr);
 
-	return (0);
+	return (1);
 
 
 }
