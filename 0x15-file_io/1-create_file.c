@@ -16,20 +16,26 @@ int create_file(const char *filename, char *text_content)
 	int byt;
 
 	if (!filename)
-		return (0);
+		return (-1);
 
-	ptr = open(filename, O_CREAT|O_TRUNC, 0600);
+	ptr = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
 	if (ptr == -1)
-		return(0);
+		return(-1);
 
-	for (i = 0; text_content[i] != '\0'; i++)
+	if (!text_content)
+		text_content = "";
+
+	for (i = 0; text_content[i]; i++)
 		;
 
 	byt = write(ptr, text_content, i);
 
+	if (byt == -1)
+		return (-1);
+
 	close(ptr);
 
-	return(byt);
+	return(0);
 
 }
