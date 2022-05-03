@@ -5,22 +5,30 @@
  * @filename: name of file
  * @letters: content to write to file
  * Return: return the no. of bytes
- * 
+ *
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *ptr;
+	int ptr, byt, n;
 
-	ptr = fopen(*filename, O_RDONLY);
+	char buf[letters];
 
-	if (!ptr)
+	if (!filename)
 		return (0);
 
-	while (!feof(ptr))
-	{
-		write(1, ptr, letters);
-	}
+	ptr = open(filename, O_RDONLY);
 
-	return(0);
+	if (ptr == -1)
+		return (0);
+
+	n = read(ptr, buf, letters);
+
+	byt = write(STDOUT_FILENO, buf, n);
+
+	close(ptr);
+
+	return(byt);
+
+
 }
