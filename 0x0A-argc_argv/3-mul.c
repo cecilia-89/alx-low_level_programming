@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - This is the main function
+ * @argc: count of variables
+ * @argv: the variables
+ * Return: on success 0
+ */
+
 int main(int argc, char **argv)
 {
 	int i;
@@ -20,7 +27,7 @@ int main(int argc, char **argv)
 		{
 			product *= atoi(argv[i]);
 
-		}		
+		}
 
 		printf("%d\n", product);
 

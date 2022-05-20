@@ -3,6 +3,13 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+/**
+ * main - This is the main function
+ * @argc: count of variables
+ * @argv: the variables
+ * Return: on success 0
+ */
+
 int main(int argc, char **argv)
 {
 	int i, sum;
@@ -23,8 +30,8 @@ int main(int argc, char **argv)
 
 				return (1);
 			}
-		
-			sum += atoi(argv[i]);	
+
+			sum += atoi(argv[i]);
 		}
 
 		printf("%d\n", sum);
