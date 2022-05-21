@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
 /**
  * main - This is the main function
@@ -24,14 +25,21 @@ int main(int argc, char **argv)
 
 		for (i = 1; i < argc; i++)
 		{
-			if (!isdigit(*argv[i]))
-			{
-				printf("Error\n");
+			long unsigned int j;
 
-				return (1);
+			for (j = 0; j < strlen(argv[i]); j++)
+			{
+				if (isalpha(argv[i][j]))
+				{
+					printf("Error\n");
+
+					return (1);
+				}
 			}
 
+
 			sum += atoi(argv[i]);
+
 		}
 
 		printf("%d\n", sum);

@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 
 	product = 1;
 
-	if (argc == 1)
+	if (argc < 3)
 
 		printf("Error\n");
 	else
