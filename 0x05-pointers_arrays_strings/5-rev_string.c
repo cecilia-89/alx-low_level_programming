@@ -14,21 +14,21 @@ void rev_string(char *s)
 
 	unsigned long int len, length, count;
 
-	if (s == NULL)
-
-		exit (0);
-
-	str = strdup(s);
-
-	length = strlen(s) - 1;
-
-	len = length;
-
-	for (count = 0; count <= length; count++)
+	if (strlen(s) != 0)
 	{
-		s[count] = str[len];
 
-		len--;
+		str = strdup(s);
+
+		length = strlen(s) - 1;
+
+		len = length;
+
+		for (count = 0; count <= length; count++)
+		{
+			s[count] = str[len];
+
+			len--;
+		}
 	}
 
 
