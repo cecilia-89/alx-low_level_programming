@@ -12,7 +12,7 @@ void rev_string(char *s)
 {
 	char *str;
 
-	long unsigned int len, length, count;
+	unsigned long int len, length, count;
 
 	str = strdup(s);
 
@@ -26,16 +26,6 @@ void rev_string(char *s)
 
 		len--;
 	}
-	
 
-}
 
-int main(void)
-{
-	    char s[10] = "My School";
-
-	        printf("%s\n", s);
-		    rev_string(s);
-		        printf("%s\n", s);
-			    return (0);
 }

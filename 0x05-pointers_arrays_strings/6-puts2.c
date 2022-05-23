@@ -2,11 +2,12 @@
 
 /**
  * puts2 - prints one and the other
+ * @str: pointer to char
  */
 
 void puts2(char *str)
 {
-	long unsigned int length, i;
+	unsigned long int length, i;
 
 	length = strlen(str);
 

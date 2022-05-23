@@ -2,15 +2,17 @@
 
 /**
  * puts_half - prints the later half of a string
+ * @str: pointer to char
+ *
  */
 
 void puts_half(char *str)
 {
-	long unsigned int i, length, dividend;
+	unsigned long int i, length, dividend;
 
 	length = strlen(str);
 
-	dividend = length/2;
+	dividend = length/ 2;
 
 	if (length % 2 != 0)
 

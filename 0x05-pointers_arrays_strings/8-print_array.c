@@ -3,6 +3,10 @@
 /**
  * print_array - prints certain values
  *
+ * @a: pointer to array of type int
+ *
+ * @n: interger
+ *
  */
 void print_array(int *a, int n)
 {
@@ -10,7 +14,7 @@ void print_array(int *a, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		if (i == (n -1))
+		if (i == (n - 1))
 			printf("%d", a[i]);
 
 		else
