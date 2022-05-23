@@ -23,6 +23,7 @@ int main(void)
 
 			else
 				printf("Buzz ");
+		}
 
 		else if (i % 3 == 0)
 			printf("Fizz ");
