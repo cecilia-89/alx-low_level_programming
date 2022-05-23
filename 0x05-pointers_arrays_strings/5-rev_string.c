@@ -14,7 +14,7 @@ void rev_string(char *s)
 
 	unsigned long int len, length, count;
 
-	if (str == NULL)
+	if (s == NULL)
 
 		exit (0);
 
