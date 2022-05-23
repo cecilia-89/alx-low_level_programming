@@ -22,7 +22,7 @@ void print_diagonal(__attribute__((unused)) int n)
 		{
 			int j;
 
-			for (j = 0; j < i; j++)
+			for (j = 1; j < i; j++)
 			{
 				_putchar(' ');
 			}
