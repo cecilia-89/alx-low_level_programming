@@ -14,6 +14,10 @@ void rev_string(char *s)
 
 	unsigned long int len, length, count;
 
+	if (str == NULL)
+
+		exit (0);
+
 	str = strdup(s);
 
 	length = strlen(s) - 1;

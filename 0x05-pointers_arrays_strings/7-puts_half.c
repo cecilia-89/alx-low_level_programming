@@ -10,7 +10,7 @@ void puts_half(char *str)
 {
 	unsigned long int i, length, dividend;
 
-	length = strlen(str);
+	length = strlen(str) - 1;
 
 	dividend = length/ 2;
 
