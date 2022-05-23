@@ -16,7 +16,7 @@ void puts_half(char *str)
 
 	if (length % 2 != 0)
 
-		dividend = ((length - 1) / 2) -1;
+		dividend = (length - 1) / 2;
 
 	for (i = dividend; i < length; i++)
 	{
