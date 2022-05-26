@@ -11,7 +11,7 @@ char *cap_string(char *str)
 {
 	char *s;
 
-	size_t length, count, slen, i;
+	size_t length, c, slen, i;
 
 	s = "\n' '\t,;.!?\"{}()";
 
@@ -19,13 +19,13 @@ char *cap_string(char *str)
 
 	slen = strlen(s);
 
-	for (count = 0; count < length; count++)
+	for (c = 0; c < length; c++)
 	{
 		for (i = 0; i < slen; i++)
 		{
-			if ((str[count] > 96 && str[count] < 123) && (str[count - 1] == s[i] || !str[count - 1]))
+			if ((str[c] > 96 && str[c] < 123) && (str[c - 1] == s[i] || !str[c - 1]))
 			{
-				str[count]  = str[count] - 32;
+				str[c]  = str[c] - 32;
 			}
 		}
 
