@@ -2,7 +2,7 @@
 
 /**
  * _strcmp - compares two strings
- * @s1: first str 
+ * @s1: first str
  * @s2: second srt
  * Return: either 0 on success
  *
@@ -18,9 +18,9 @@ int _strcmp(char *s1, char *s2)
 		{
 			if (s1[i] > s2[i])
 
-				return(1);
+				return (s1[0] - s2[0]);
 
-			return (-1);
+			return (s2[0] - s1[0]);
 		}
 	}
 
