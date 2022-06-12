@@ -1,5 +1,4 @@
 #include "lists.h"
-#include "1-dlistint_len.c"
 
 /**
  * *get_dnodeint_at_index - gets a node at a certain index
@@ -14,14 +13,20 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 	unsigned int count;
 
-	if (head == NULL)
-		return(NULL);
-
 	temp = head;
 
-	for (count = 0; count < index; count++)
+	count = 0;
+
+	while (temp != NULL)
+	{
+		if (count == index)
+			return (temp);
+
 		temp = temp->next;
 
-	return (temp);
+		count++;
+	}
+
+	return (NULL);
 
 }
