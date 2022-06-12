@@ -5,7 +5,7 @@
  * @h: base node
  * @idx: position to insert node
  * @n: interger
- *
+ * Return: the base head
  */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
@@ -42,11 +42,13 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 				*h = new;
 			else
 				new->prev->next = new;
+			
+			return (*h);
 
 		}
 
 		temp = temp->next;
 	}
 
-	return (*h);
+	return (NULL);
 }
