@@ -1,8 +1,10 @@
 #include "lists.h"
 
 /**
- *
- *
+ * delete_nodeint_at_index - deletes a node at a certain index
+ * @head: the base node
+ * @index: the index to delete the node
+ * Return: 1 on success
  */
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
@@ -13,16 +15,41 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 	temp = *head;
 
-	for (i = 0; i < index; i++)
-		temp = temp->next;
+	if (*head == NULL)
+		return (-1);
 
-	tail = temp->next->next;
+	if (index == 0)
+	{
+		if (temp->next != NULL)
+			temp->next->prev = NULL;
 
-	free(temp->next);
+		*head = temp->next;
+	}
+	
+	else
+	{
 
-	temp->next = tail;
+		for (i = 0; temp != NULL; i++)
+		{
+			if (i == index)
+			{
+				if (temp->next == NULL)
+					temp->prev->next = NULL;
 
-	tail->prev = temp;
+				tail = temp->next;
 
-	return (1);
+				tail->prev = temp->prev;
+
+				temp->prev->next = temp->next;
+
+				return (1);
+			}
+
+			temp = temp->next;
+		}
+	}
+
+	free(temp);
+
+	return (-1);
 }
