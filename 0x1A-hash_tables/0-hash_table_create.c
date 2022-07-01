@@ -14,10 +14,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	h = malloc(sizeof(hash_table_t));
 
-	hash_node = malloc(sizeof(size));
+	if (h == NULL)
+		return NULL
 
-	if (h || hash_node == NULL)
-		return NULL;
+	hash_node = malloc(sizeof(size));
 
 	h->size = size;
 
