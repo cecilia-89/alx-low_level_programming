@@ -19,13 +19,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 
 	h->size = size;
-	h->array = malloc(sizeof(void*) * size);
+	h->array = malloc(sizeof(void *) * size);
 
 	if (h->array == NULL)
 		return (NULL);
-
-	for (i = 0; i < size; i++)
-		h->array[i] = NULL;
 
 	return (h);
 }
